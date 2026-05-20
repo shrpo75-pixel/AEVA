@@ -1,0 +1,571 @@
+/* 
+  ═══════════════════════════════════════════════════════════════════════════
+  AEVA OS - DESIGN SYSTEM TOKENS
+  Film Noir + NVIDIA Cyberpunk Minimalism
+  GPU-Optimized for Mobile & Desktop Responsiveness
+  ═══════════════════════════════════════════════════════════════════════════
+*/
+
+:root {
+  /* ─────────────────────────────────────────────────────────────────────── */
+  /* CORE COLOR PALETTE */
+  /* ─────────────────────────────────────────────────────────────────────── */
+  --aeva-bg-carbon: #0B0C10;
+  --aeva-bg-dark: #16213E;
+  --aeva-glass-dark: #1F2833;
+  --aeva-accent-neon: #76B900;
+  --aeva-accent-titanium: #45A29E;
+  --aeva-accent-cyan: #00D9FF;
+  --aeva-accent-purple: #9D4EDD;
+  --aeva-text-primary: #ECEFF1;
+  --aeva-text-secondary: #90A4AE;
+  --aeva-text-muted: #546E7A;
+  --aeva-danger: #FF4757;
+  --aeva-warning: #FFA502;
+  --aeva-success: #2ED573;
+
+  /* ─────────────────────────────────────────────────────────────────────── */
+  /* GLASSMORPHISM EFFECTS */
+  /* ─────────────────────────────────────────────────────────────────────── */
+  --aeva-glass-blur-sm: blur(8px);
+  --aeva-glass-blur-md: blur(12px);
+  --aeva-glass-blur-lg: blur(16px);
+  --aeva-glass-blur-xl: blur(24px);
+
+  --aeva-glass-opacity: 0.08;
+  --aeva-glass-opacity-hover: 0.12;
+  --aeva-glass-opacity-active: 0.16;
+
+  /* ─────────────────────────────────────────────────────────────────────── */
+  /* NEON GLOW INTENSITIES */
+  /* ─────────────────────────────────────────────────────────────────────── */
+  --aeva-glow-neon-sm: 0 0 8px rgba(118, 185, 0, 0.4);
+  --aeva-glow-neon-md: 0 0 16px rgba(118, 185, 0, 0.6);
+  --aeva-glow-neon-lg: 0 0 24px rgba(118, 185, 0, 0.8);
+  --aeva-glow-neon-xl: 0 0 32px rgba(118, 185, 0, 1);
+
+  --aeva-glow-titanium-sm: 0 0 8px rgba(69, 162, 158, 0.4);
+  --aeva-glow-titanium-md: 0 0 16px rgba(69, 162, 158, 0.6);
+  --aeva-glow-titanium-lg: 0 0 24px rgba(69, 162, 158, 0.8);
+  --aeva-glow-titanium-xl: 0 0 32px rgba(69, 162, 158, 1);
+
+  --aeva-glow-cyan-sm: 0 0 8px rgba(0, 217, 255, 0.4);
+  --aeva-glow-cyan-md: 0 0 16px rgba(0, 217, 255, 0.6);
+  --aeva-glow-cyan-lg: 0 0 24px rgba(0, 217, 255, 0.8);
+  --aeva-glow-cyan-xl: 0 0 32px rgba(0, 217, 255, 1);
+
+  /* ─────────────────────────────────────────────────────────────────────── */
+  /* SHADOW SYSTEM (Depth Layering) */
+  /* ─────────────────────────────────────────────────────────────────────── */
+  --aeva-shadow-xs: 0 2px 4px rgba(0, 0, 0, 0.3);
+  --aeva-shadow-sm: 0 4px 8px rgba(0, 0, 0, 0.4);
+  --aeva-shadow-md: 0 8px 16px rgba(0, 0, 0, 0.5);
+  --aeva-shadow-lg: 0 12px 24px rgba(0, 0, 0, 0.6);
+  --aeva-shadow-xl: 0 16px 32px rgba(0, 0, 0, 0.7);
+
+  --aeva-shadow-inner-sm: inset 0 2px 4px rgba(0, 0, 0, 0.3);
+  --aeva-shadow-inner-md: inset 0 4px 8px rgba(0, 0, 0, 0.4);
+
+  /* ─────────────────────────────────────────────────────────────────────── */
+  /* SPACING SYSTEM (8px base, mobile-first) */
+  /* ─────────────────────────────────────────────────────────────────────── */
+  --aeva-space-xs: 4px;
+  --aeva-space-sm: 8px;
+  --aeva-space-md: 12px;
+  --aeva-space-lg: 16px;
+  --aeva-space-xl: 24px;
+  --aeva-space-2xl: 32px;
+  --aeva-space-3xl: 48px;
+
+  /* ─────────────────────────────────────────────────────────────────────── */
+  /* BORDER RADIUS (Rounded, GPU-optimized) */
+  /* ─────────────────────────────────────────────────────────────────────── */
+  --aeva-radius-sm: 4px;
+  --aeva-radius-md: 8px;
+  --aeva-radius-lg: 12px;
+  --aeva-radius-xl: 16px;
+  --aeva-radius-pill: 9999px;
+
+  /* ─────────────────────────────────────────────────────────────────────── */
+  /* TYPOGRAPHY SYSTEM */
+  /* ─────────────────────────────────────────────────────────────────────── */
+  --aeva-font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  --aeva-font-mono: 'Fira Code', 'Courier New', monospace;
+
+  --aeva-font-size-xs: 11px;
+  --aeva-font-size-sm: 13px;
+  --aeva-font-size-base: 14px;
+  --aeva-font-size-md: 16px;
+  --aeva-font-size-lg: 18px;
+  --aeva-font-size-xl: 20px;
+  --aeva-font-size-2xl: 24px;
+  --aeva-font-size-3xl: 28px;
+
+  --aeva-line-height-tight: 1.25;
+  --aeva-line-height-normal: 1.5;
+  --aeva-line-height-relaxed: 1.75;
+
+  --aeva-font-weight-light: 300;
+  --aeva-font-weight-normal: 400;
+  --aeva-font-weight-medium: 500;
+  --aeva-font-weight-semibold: 600;
+  --aeva-font-weight-bold: 700;
+
+  /* ─────────────────────────────────────────────────────────────────────── */
+  /* ANIMATION TIMINGS (GPU-Optimized for Mobile) */
+  /* ─────────────────────────────────────────────────────────────────────── */
+  --aeva-duration-instant: 50ms;
+  --aeva-duration-fast: 150ms;
+  --aeva-duration-normal: 300ms;
+  --aeva-duration-slow: 500ms;
+  --aeva-duration-slowest: 800ms;
+
+  --aeva-easing-sharp: cubic-bezier(0.4, 0, 0.2, 1);
+  --aeva-easing-smooth: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  --aeva-easing-bounce: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  --aeva-easing-elastic: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+  /* ─────────────────────────────────────────────────────────────────────── */
+  /* Z-INDEX HIERARCHY */
+  /* ─────────────────────────────────────────────────────────────────────── */
+  --z-hide: -1;
+  --z-base: 0;
+  --z-dropdown: 10;
+  --z-sticky: 20;
+  --z-modal-backdrop: 30;
+  --z-modal: 40;
+  --z-toast: 50;
+  --z-tooltip: 60;
+
+  /* ─────────────────────────────────────────────────────────────────────── */
+  /* BREAKPOINTS (Mobile-First) */
+  /* ─────────────────────────────────────────────────────────────────────── */
+  --bp-mobile: 0px;
+  --bp-tablet: 640px;
+  --bp-laptop: 1024px;
+  --bp-desktop: 1440px;
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════ */
+/* GLASSMORPHISM PANEL PRESETS */
+/* ═══════════════════════════════════════════════════════════════════════════ */
+
+.aeva-glass-panel {
+  backdrop-filter: var(--aeva-glass-blur-md);
+  -webkit-backdrop-filter: var(--aeva-glass-blur-md);
+  background: rgba(31, 40, 51, var(--aeva-glass-opacity));
+  border: 1px solid rgba(118, 185, 0, 0.1);
+  border-radius: var(--aeva-radius-lg);
+  box-shadow: var(--aeva-shadow-sm);
+}
+
+.aeva-glass-panel:hover {
+  background: rgba(31, 40, 51, var(--aeva-glass-opacity-hover));
+  border-color: rgba(118, 185, 0, 0.2);
+}
+
+.aeva-glass-panel-deep {
+  backdrop-filter: var(--aeva-glass-blur-xl);
+  -webkit-backdrop-filter: var(--aeva-glass-blur-xl);
+  background: rgba(31, 40, 51, 0.2);
+  border: 1px solid rgba(69, 162, 158, 0.15);
+  box-shadow: var(--aeva-shadow-lg);
+}
+
+.aeva-glass-panel-neon {
+  background: rgba(31, 40, 51, var(--aeva-glass-opacity));
+  border: 1px solid rgba(118, 185, 0, 0.3);
+  box-shadow: var(--aeva-glow-neon-sm), var(--aeva-shadow-md);
+}
+
+.aeva-glass-panel-titanium {
+  background: rgba(31, 40, 51, var(--aeva-glass-opacity));
+  border: 1px solid rgba(69, 162, 158, 0.3);
+  box-shadow: var(--aeva-glow-titanium-sm), var(--aeva-shadow-md);
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════ */
+/* NEON GLOW EFFECT PRESETS */
+/* ═══════════════════════════════════════════════════════════════════════════ */
+
+.aeva-glow-neon-sm {
+  box-shadow: var(--aeva-glow-neon-sm);
+}
+
+.aeva-glow-neon-md {
+  box-shadow: var(--aeva-glow-neon-md);
+}
+
+.aeva-glow-neon-lg {
+  box-shadow: var(--aeva-glow-neon-lg);
+}
+
+.aeva-glow-neon-xl {
+  box-shadow: var(--aeva-glow-neon-xl);
+}
+
+.aeva-glow-titanium-sm {
+  box-shadow: var(--aeva-glow-titanium-sm);
+}
+
+.aeva-glow-titanium-md {
+  box-shadow: var(--aeva-glow-titanium-md);
+}
+
+.aeva-glow-titanium-lg {
+  box-shadow: var(--aeva-glow-titanium-lg);
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════ */
+/* ANIMATION PRESETS */
+/* ═══════════════════════════════════════════════════════════════════════════ */
+
+/* Fade In */
+@keyframes aeva-fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.aeva-animate-fade-in {
+  animation: aeva-fade-in var(--aeva-duration-normal) var(--aeva-easing-smooth);
+}
+
+/* Slide Up */
+@keyframes aeva-slide-up {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.aeva-animate-slide-up {
+  animation: aeva-slide-up var(--aeva-duration-normal) var(--aeva-easing-smooth);
+}
+
+/* Slide Down */
+@keyframes aeva-slide-down {
+  from {
+    opacity: 0;
+    transform: translateY(-12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.aeva-animate-slide-down {
+  animation: aeva-slide-down var(--aeva-duration-normal) var(--aeva-easing-smooth);
+}
+
+/* Scale Pop */
+@keyframes aeva-scale-pop {
+  from {
+    opacity: 0;
+    transform: scale(0.92);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.aeva-animate-scale-pop {
+  animation: aeva-scale-pop var(--aeva-duration-fast) var(--aeva-easing-bounce);
+}
+
+/* Pulse Glow (Neon) */
+@keyframes aeva-pulse-neon {
+  0%, 100% {
+    box-shadow: var(--aeva-glow-neon-md);
+  }
+  50% {
+    box-shadow: var(--aeva-glow-neon-lg);
+  }
+}
+
+.aeva-animate-pulse-neon {
+  animation: aeva-pulse-neon 2s var(--aeva-easing-smooth) infinite;
+}
+
+/* Pulse Glow (Titanium) - Slow Deep */
+@keyframes aeva-pulse-titanium-slow {
+  0%, 100% {
+    box-shadow: var(--aeva-glow-titanium-md);
+  }
+  50% {
+    box-shadow: var(--aeva-glow-titanium-lg);
+  }
+}
+
+.aeva-animate-pulse-titanium-slow {
+  animation: aeva-pulse-titanium-slow 3s var(--aeva-easing-smooth) infinite;
+}
+
+/* Pulse Glow (Neon) - Fast */
+@keyframes aeva-pulse-neon-fast {
+  0%, 100% {
+    box-shadow: var(--aeva-glow-neon-md);
+  }
+  50% {
+    box-shadow: var(--aeva-glow-neon-xl);
+  }
+}
+
+.aeva-animate-pulse-neon-fast {
+  animation: aeva-pulse-neon-fast 1s var(--aeva-easing-smooth) infinite;
+}
+
+/* Waveform Electric */
+@keyframes aeva-waveform {
+  0%, 100% {
+    transform: scaleY(1);
+  }
+  25% {
+    transform: scaleY(0.7);
+  }
+  50% {
+    transform: scaleY(1.3);
+  }
+  75% {
+    transform: scaleY(0.8);
+  }
+}
+
+.aeva-animate-waveform {
+  animation: aeva-waveform 1.2s var(--aeva-easing-smooth) infinite;
+  transform-origin: center;
+}
+
+/* Rotating Ring (Vision) */
+@keyframes aeva-rotate-ring {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.aeva-animate-rotate-ring {
+  animation: aeva-rotate-ring 3s linear infinite;
+}
+
+/* Shimmer Text */
+@keyframes aeva-shimmer {
+  0% {
+    background-position: 0% center;
+  }
+  100% {
+    background-position: 200% center;
+  }
+}
+
+.aeva-animate-shimmer {
+  background: linear-gradient(
+    90deg,
+    rgba(118, 185, 0, 0.2),
+    rgba(69, 162, 158, 0.4),
+    rgba(118, 185, 0, 0.2)
+  );
+  background-size: 200% auto;
+  animation: aeva-shimmer 2s var(--aeva-easing-smooth) infinite;
+}
+
+/* Float (Gentle up/down) */
+@keyframes aeva-float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+.aeva-animate-float {
+  animation: aeva-float 3s var(--aeva-easing-smooth) infinite;
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════ */
+/* BOOT SEQUENCE ANIMATIONS */
+/* ═══════════════════════════════════════════════════════════════════════════ */
+
+@keyframes aeva-boot-scan {
+  0% {
+    clip-path: polygon(0 0%, 100% 0%, 100% 0%, 0 0%);
+  }
+  100% {
+    clip-path: polygon(0 0%, 100% 0%, 100% 100%, 0 100%);
+  }
+}
+
+.aeva-boot-scan {
+  animation: aeva-boot-scan 1.5s var(--aeva-easing-sharp) forwards;
+}
+
+@keyframes aeva-boot-flicker {
+  0%, 100% {
+    opacity: 1;
+  }
+  14% {
+    opacity: 1;
+  }
+  15% {
+    opacity: 0.4;
+  }
+  49% {
+    opacity: 0.4;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+.aeva-boot-flicker {
+  animation: aeva-boot-flicker 2s var(--aeva-easing-sharp) infinite;
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════ */
+/* RESPONSIVE UTILITY CLASSES (Mobile-First) */
+/* ═══════════════════════════════════════════════════════════════════════════ */
+
+/* Viewport Safe Areas */
+.aeva-safe-top {
+  padding-top: max(var(--aeva-space-lg), env(safe-area-inset-top));
+}
+
+.aeva-safe-bottom {
+  padding-bottom: max(var(--aeva-space-lg), env(safe-area-inset-bottom));
+}
+
+.aeva-safe-left {
+  padding-left: max(var(--aeva-space-lg), env(safe-area-inset-left));
+}
+
+.aeva-safe-right {
+  padding-right: max(var(--aeva-space-lg), env(safe-area-inset-right));
+}
+
+/* No Horizontal Scroll */
+* {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body,
+html {
+  overflow-x: clip;
+}
+
+/* Touch-Optimized Hit Areas */
+.aeva-touch-target {
+  min-height: 44px;
+  min-width: 44px;
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════ */
+/* BASE STYLES */
+/* ═══════════════════════════════════════════════════════════════════════════ */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: var(--aeva-font-family);
+  background-color: var(--aeva-bg-carbon);
+  color: var(--aeva-text-primary);
+  font-size: var(--aeva-font-size-base);
+  line-height: var(--aeva-line-height-normal);
+}
+
+body {
+  background-color: var(--aeva-bg-carbon);
+  color: var(--aeva-text-primary);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  accent-color: var(--aeva-accent-neon);
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════ */
+/* UTILITY CLASSES */
+/* ═══════════════════════════════════════════════════════════════════════════ */
+
+.text-neon {
+  color: var(--aeva-accent-neon);
+}
+
+.text-titanium {
+  color: var(--aeva-accent-titanium);
+}
+
+.text-cyan {
+  color: var(--aeva-accent-cyan);
+}
+
+.bg-carbon {
+  background-color: var(--aeva-bg-carbon);
+}
+
+.bg-glass-dark {
+  background-color: var(--aeva-glass-dark);
+}
+
+.will-change-gpu {
+  will-change: transform, opacity;
+  transform: translateZ(0);
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════ */
+/* PERFORMANCE OPTIMIZATIONS */
+/* ═══════════════════════════════════════════════════════════════════════════ */
+
+/* GPU Acceleration for Critical Animations */
+.aeva-gpu-accel {
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+/* Prevent Layout Shift During Streaming */
+.aeva-no-layout-shift {
+  contain: layout style paint;
+}
+
+/* Optimize Blur Effects for Mobile */
+@supports (-webkit-backdrop-filter: none) {
+  .aeva-glass-panel {
+    -webkit-backdrop-filter: var(--aeva-glass-blur-md);
+  }
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Dark Mode Enforcement */
+@media (prefers-color-scheme: light) {
+  html {
+    background-color: var(--aeva-bg-carbon) !important;
+    color: var(--aeva-text-primary) !important;
+  }
+}
