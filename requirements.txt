@@ -5,3 +5,4 @@ aiohttp
 openai
 pandas
 numpy
+python-dotenv
