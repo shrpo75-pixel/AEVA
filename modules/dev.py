@@ -76,6 +76,11 @@ def render_metrics_cards():
             )
 
 
+def escape_html(text: str) -> str:
+    """Escape HTML tags in code snippets so they render as text rather than markup."""
+    return text.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
+
+
 def render_git_diff_viewer():
     """Render git diff-style code viewer in glassmorphism blocks."""
     st.markdown(
@@ -142,6 +147,8 @@ def render_git_diff_viewer():
             color = "var(--aeva-text-primary)"
             bg = "transparent"
 
+        safe_line = escape_html(line)
+
         st.markdown(
             f"""
             <div style="
@@ -152,7 +159,7 @@ def render_git_diff_viewer():
                 white-space: pre-wrap;
                 word-break: break-word;
             ">
-                {line}
+                {safe_line}
             </div>
             """,
             unsafe_allow_html=True,
